@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>评价与建议 - 姜兴森</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <ul>
+            <li><a href="index.html">回到首页</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- 联系方式部分 -->
+        <section>
+            <h2>联系方式</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>邮箱</th>
+                        <td>1794753009@qq.com</td>
+                    </tr>
+                    <tr>
+                        <th>电话</th>
+                        <td>1587148****</td>
+                    </tr>
+                    <tr>
+                        <th>地址</th>
+                        <td>湖北省武汉市江夏区</td>
+                    </tr>
+                    <tr>
+                        <th>社交媒体</th>
+                        <td>
+                            <ul>
+                                <li>QQ：1794753009</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 评价与建议表单 -->
+        <section>
+            <h2>评价与建议</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">您的姓名：</label>
+                    <input type="text" id="name" name="name" required placeholder="请输入您的姓名">
+                </div>
+
+                <div class="form-group">
+                    <label for="relationship">您与我的关系：</label>
+                    <select id="relationship" name="relationship" required>
+                        <option value="">请选择</option>
+                        <option value="teacher">老师</option>
+                        <option value="classmate">同学</option>
+                        <option value="friend">朋友</option>
+                        <option value="other">其他</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="evaluation">对我的评价：</label>
+                    <textarea id="evaluation" name="evaluation" rows="4" required placeholder="请分享您对我的评价..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="suggestion">建议与期望：</label>
+                    <textarea id="suggestion" name="suggestion" rows="4" required placeholder="请分享您的建议和期望..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact">您的联系方式（选填）：</label>
+                    <input type="text" id="contact" name="contact" placeholder="方便我回复您">
+                </div>
+
+                <button type="submit">提交</button>
+            </form>
+        </section>
+
+        <!-- 收到的评价展示 -->
+        <section>
+            <h2>收到的评价</h2>
+            <div class="evaluation-list">
+                <article class="evaluation-item">
+                    <h3>来自老师的评价</h3>
+                    <p class="evaluation-content">学习态度认真，善于思考，在信息安全领域展现出浓厚的兴趣和潜力。</p>
+                    <p class="evaluation-meta">- 张教授，2025年3月</p>
+                </article>
+
+                <article class="evaluation-item">
+                    <h3>来自同学的评价</h3>
+                    <p class="evaluation-content">篮球技术很好，在球场上很有领导力，同时也很热心帮助他人。</p>
+                    <p class="evaluation-meta">- 李同学，2025年2月</p>
+                </article>
+
+                <article class="evaluation-item">
+                    <h3>来自朋友的建议</h3>
+                    <p class="evaluation-content">建议可以多参加一些技术竞赛，相信你的实力一定会有很好的表现。</p>
+                    <p class="evaluation-meta">- 王同学，2025年1月</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2024 个人简历网站</p>
+    </footer>
+</body>
+</html> 

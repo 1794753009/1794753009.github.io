@@ -1,0 +1,325 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Microsoft YaHei', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* 导航栏样式 */
+nav {
+    background-color: #2c3e50;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #34495e;
+}
+
+/* 主要内容区域 */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+/* 表格样式 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    color: #2c3e50;
+    width: 20%;
+}
+
+/* 表单样式 */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* 卡片样式 */
+.skill-grid, .equipment-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.skill-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.equipment-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.skill-item, .equipment-item {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.skill-item {
+    border-left: 4px solid #3498db;
+}
+
+.equipment-item {
+    text-align: center;
+}
+
+.skill-item h3, .equipment-item h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.skill-item p, .equipment-item p {
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.skill-item ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    color: #666;
+}
+
+.skill-item li {
+    margin-bottom: 0.5rem;
+}
+
+/* 列表样式 */
+ul {
+    list-style-position: inside;
+    margin-left: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* 页脚样式 */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    /* 导航栏响应式 */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    /* 内容区域响应式 */
+    section {
+        padding: 1rem;
+    }
+
+    /* 表格响应式 */
+    table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    th, td {
+        padding: 0.5rem;
+        white-space: nowrap;
+    }
+
+    /* 网格布局响应式 */
+    .skill-grid, .equipment-list {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-item, .equipment-item {
+        padding: 1rem;
+    }
+}
+
+/* 篮球简介部分 */
+.basketball-intro {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.intro-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.intro-item h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.intro-item table {
+    margin: 0;
+}
+
+/* 专业介绍部分 */
+.major-intro {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.intro-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.intro-item h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.intro-item table {
+    margin: 0;
+}
+
+/* 课程展示网格 */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.course-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.course-item h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.course-item ul {
+    list-style-position: inside;
+    margin-top: 1rem;
+}
+
+/* 就业前景展示 */
+.career-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.career-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.career-item h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.career-item ul {
+    list-style-position: inside;
+    margin-top: 1rem;
+} 
